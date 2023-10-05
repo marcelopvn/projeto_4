@@ -9,48 +9,43 @@ body {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
-
 header{
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(8px);
 
     nav li  {
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
-        text-align: center;
+
+        &:hover{
+            background-color: variaveis.$corSecundaria;
+            border-radius: 7px;
+        }
     }
     
         a{
-            color: variaveis.$cordoBtnHeader;
-            margin-left: 30px;
+            color: variaveis.$cordoTextoHeader;
+            margin: 0 5px;
         }
     }
 
-
-ul.nav.nav-pills {
-    display:flex;
-    align-items: center;
-    margin-left: 450px;
-
+ul.nav.nav-pills{
+    margin-left: 550px;
 }
 
 .nav-pills .nav-link{
-    align-items: center;
     color: variaveis.$corDoTexto;
-}
-
-.nav-pills .nav-link.active {
-    background-color: variaveis.$corBtn;
 }
 
 .sobre{
 
     .img-filme{
         width: 1300px;
-        margin-left: 150px;
+        text-align: center;
         margin-top: 50px;
         border-radius: 10px;
         align-items: center;
@@ -77,15 +72,32 @@ ul.nav.nav-pills {
     h1{
         color: variaveis.$corSecundaria;
         text-align: center;
-        margin-top: 65px;
+        margin-top: 100px;
         font-size: 40px;
     }
 
     .video-trailer {
-        width: 700px;
-        height: 400px;
-        margin-left: 440px;
+        width: 1000px;
+        height: 600px;
         margin-top: 40px;
         margin-bottom: 50px;
+    }
+}
+
+.bilheteria {
+    margin-bottom: 90px;
+
+    h1{
+        color: variaveis.$corSecundaria;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+
+    p{
+        color: variaveis.$corDoTexto;
+        text-align: center;
+        width: 1300px;
+        margin-left: 150px;
+        font-size: 20px;
     }
 }
