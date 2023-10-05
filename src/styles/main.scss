@@ -1,3 +1,91 @@
+@use 'reset';
+@use 'variaveis';
+
 body {
-    background-color: rgb(252, 25, 25);
+    background-color: variaveis.$corDeFundo;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+    backdrop-filter: blur(4px);
+
+    nav li  {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+        a{
+            color: variaveis.$cordoBtnHeader;
+            margin-left: 30px;
+        }
+    }
+
+
+ul.nav.nav-pills {
+    display:flex;
+    align-items: center;
+    margin-left: 450px;
+
+}
+
+.nav-pills .nav-link{
+    align-items: center;
+    color: variaveis.$corDoTexto;
+}
+
+.nav-pills .nav-link.active {
+    background-color: variaveis.$corBtn;
+}
+
+.sobre{
+
+    .img-filme{
+        width: 1300px;
+        margin-left: 150px;
+        margin-top: 50px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    h1{
+        color: variaveis.$corSecundaria;
+        text-align: center;
+        margin-top: 55px;
+        font-size: 50px;
+    }
+
+    p{
+        color: variaveis.$corDoTexto;
+        text-align: center;
+        width: 1300px;
+        margin-left: 150px;
+        font-size: 20px;
+    }
+}
+
+.trailer{
+
+    h1{
+        color: variaveis.$corSecundaria;
+        text-align: center;
+        margin-top: 65px;
+        font-size: 40px;
+    }
+
+    .video-trailer {
+        width: 700px;
+        height: 400px;
+        margin-left: 440px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
 }
