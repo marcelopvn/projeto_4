@@ -14,6 +14,8 @@ body {
 
 header{
     backdrop-filter: blur(8px);
+    }
+
 
     nav li  {
         margin-top: 15px;
@@ -25,16 +27,25 @@ header{
             background-color: variaveis.$corSecundaria;
             border-radius: 7px;
         }
-    }
-    
-        a{
-            color: variaveis.$cordoTextoHeader;
-            margin: 0 5px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 18px;
         }
+    }
+
+    a{
+        color: variaveis.$cordoTextoHeader;
+        margin: 0 5px;
     }
 
 ul.nav.nav-pills{
     margin-left: 550px;
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
 }
 
 .nav-pills .nav-link{
@@ -49,6 +60,10 @@ ul.nav.nav-pills{
         margin-top: 10px;
         border-radius: 10px;
         align-items: center;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     h1{
@@ -56,6 +71,10 @@ ul.nav.nav-pills{
         text-align: center;
         margin-top: 40px;
         font-size: 50px;
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
     }
 
     p{
@@ -64,6 +83,12 @@ ul.nav.nav-pills{
         width: 1300px;
         margin-left: 150px;
         font-size: 20px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            font-size: 18px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -81,6 +106,12 @@ ul.nav.nav-pills{
         height: 600px;
         margin-top: 40px;
         margin-bottom: 50px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+        }
     }
 }
 
@@ -91,13 +122,22 @@ ul.nav.nav-pills{
         color: variaveis.$corSecundaria;
         margin-bottom: 40px;
         margin-top: 50px;
-    }
 
+        @media (max-width: 768px) {
+            font-size: 30px;
+    }
+}
     p{
         color: variaveis.$corDoTexto;
         text-align: center;
         width: 1300px;
         margin-left: 150px;
         font-size: 20px;
+    
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 }
+
